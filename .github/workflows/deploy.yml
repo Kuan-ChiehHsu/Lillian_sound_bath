@@ -33,12 +33,14 @@ jobs:
         id: pages
         uses: actions/configure-pages@v6
 
-      # url and baseurl come from the Pages settings, so user sites
-      # (you.github.io), project sites (you.github.io/repo), and custom
-      # domains all work without editing _config.yml.
+      # Keep _config.yml baseurl when Pages does not report a project path.
+      # An empty base_path would publish asset links at the domain root.
       - name: Build site
         run: |
-          printf 'url: "%s"\nbaseurl: "%s"\n' "$PAGES_ORIGIN" "$PAGES_BASE_PATH" > _config_pages.yml
+          printf 'url: "%s"\n' "$PAGES_ORIGIN" > _config_pages.yml
+          if [ -n "$PAGES_BASE_PATH" ]; then
+            printf 'baseurl: "%s"\n' "$PAGES_BASE_PATH" >> _config_pages.yml
+          fi
           bundle exec jekyll build --config _config.yml,_config_pages.yml
         env:
           JEKYLL_ENV: production
