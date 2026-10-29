@@ -2,27 +2,26 @@
   <div class="footer-grid">
     <div>
       <h2 class="footer-heading">About</h2>
-      <p>
-        {{ site.name }}<br>
-        {{ site.title }}<br>
-        {{ site.institution }}
-      </p>
+      <p>Lillian 頌缽聲音療癒</p>
     </div>
     <div>
       <h2 class="footer-heading">Contact</h2>
       <p>
-        <a href="mailto:{{ site.email }}">{% include icon.html name="envelope" %} {{ site.email }}</a><br>
-        {% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}">{% include icon.html name="github" %} GitHub</a><br>{% endif %}
+        <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="envelope" %} {{ site.email }}</a><br>
+        {% if site.links.facebook and site.links.facebook != "" %}<a href="{{ site.links.facebook }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="facebook" %} Lillian LE</a><br>{% endif %}
+        {% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="github" %} GitHub</a><br>{% endif %}
       </p>
     </div>
+    {% if site.links.google_scholar != blank or site.links.researchgate != blank or site.links.youtube != blank %}
     <div>
-      <h2 class="footer-heading">Links</h2>
+      <h2 class="footer-heading">External Links</h2>
       <p>
-        {% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}">{% include icon.html name="google-scholar" %} Google Scholar</a><br>{% endif %}
-        {% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}">{% include icon.html name="researchgate" %} ResearchGate</a><br>{% endif %}
-        <a href="https://github.com/sbryngelson/academic-website-template">{% include icon.html name="github" %} Use this template!</a>
+        {% if site.links.google_scholar != blank %}<a href="{{ site.links.google_scholar }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="google-scholar" %} Google Scholar</a><br>{% endif %}
+        {% if site.links.researchgate != blank %}<a href="{{ site.links.researchgate }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="researchgate" %} ResearchGate</a><br>{% endif %}
+        {% if site.links.youtube != blank %}<a href="{{ site.links.youtube }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="youtube" %} Scientific bedtime reading</a><br>{% endif %}
       </p>
     </div>
+    {% endif %}
   </div>
   <div class="footer-grid">
     <div class="footer-copyright" style="grid-column: 1 / -1;">

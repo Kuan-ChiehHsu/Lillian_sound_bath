@@ -1,22 +1,24 @@
 # ============================================================
 # STEP 1: Your Identity (required)
 # ============================================================
-name: "Richard Feynman"
-title: "Professor of Physics"
-institution: "California Institute of Technology"
-email: richard@university.edu
-photo: headshot.jpg  # place your photo in images/
+name: "Lillian 頌缽聲音療癒"
+title: ""
+institution: ""
+email: jhlai0426@gmail.com
+photo: bowls.jpeg  # place your photo in images/
 
 # ============================================================
 # STEP 2: Your Links (optional -- leave blank to hide an icon)
 # ============================================================
 links:
-  google_scholar: "https://scholar.google.com/citations?user=B7vSqZsAAAAJ"
-  github: "https://github.com/"
-  researchgate: "https://www.researchgate.net/"
+  google_scholar: ""
+  github: ""
+  researchgate: ""
   orcid: ""
   twitter: ""
   linkedin: ""
+  facebook: "https://www.facebook.com/share/1JM6mj4ibF/?mibextid=wwXIfr"
+  youtube: "https://youtube.com/@ai_sandboxer?si=nPzyPeefF73mIUuF"
   cv: ""  # e.g., "papers/cv.pdf"
 
 # ============================================================
@@ -25,7 +27,7 @@ links:
 accent_color: "#1a7a6d"      # theme color; light and dark variants are derived automatically
 dark_mode: true              # set to false to disable dark mode entirely
 math: false                  # true loads MathJax on every page; or add `math: true` to individual pages
-description: "Academic webpage of Dr. Richard Feynman"
+description: "Lillian's sound bath official website"
 
 # When deploying with the included GitHub Actions workflow these are filled
 # in automatically from your Pages settings (user site, project site, or
@@ -47,37 +49,38 @@ analytics:
 # Each name is a page in _pages/. Add `label: Papers` to change the
 # navbar text without changing the URL.
 nav_pages:
-  - name: about
-  - name: publications
-  - name: talks
-  - name: research
-  - name: software
-  - name: team
-  - name: teaching
-  - name: blog
+#  - name: about
+  - name: gallery
+#  - name: publications
+#  - name: talks
+#  - name: research
+#  - name: software
+#  - name: team
+#  - name: teaching
+#  - name: blog
 
 # ============================================================
 # STEP 5: Publications (assets/ref.bib)
 # ============================================================
 # Your name is bolded in the publication list. Write it exactly as it
 # appears in the rendered list ("Last, F. M."); list the longest form first.
-scholar:
-  last_name: Feynman
-  first_name: ["R. P.", "R."]
-  style: citesty
-  locale: en
-  source: /assets/
-  bibliography: ref.bib
-  bibliography_template: bibtemplate
-  sort_by: year, month
-  order: descending
-  replace_strings: true
-  join_strings: true
-  query: "@*"
-  bibliography_list_attributes:
-    reversed: "reversed"
-  # Template-only fields, kept out of the copyable BibTeX
-  bibtex_skip_fields: [abstract, month_numeric, file, selected, code, slides, video, poster, data]
+#scholar:
+#  last_name: Feynman
+#  first_name: ["R. P.", "R."]
+#  style: citesty
+#  locale: en
+#  source: /assets/
+#  bibliography: ref.bib
+#  bibliography_template: bibtemplate
+#  sort_by: year, month
+#  order: descending
+#  replace_strings: true
+#  join_strings: true
+#  query: "@*"
+#  bibliography_list_attributes:
+#    reversed: "reversed"
+#  # Template-only fields, kept out of the copyable BibTeX
+#  bibtex_skip_fields: [abstract, month_numeric, file, selected, code, slides, video, poster, data]
 
 # ============================================================
 # Advanced Settings (you probably don't need to change these)
