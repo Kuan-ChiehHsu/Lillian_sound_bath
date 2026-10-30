@@ -145,6 +145,10 @@
     border: 1px solid var(--border-color);
   }
 
+  .profile-draw {
+    display: none;
+  }
+
   // Links: plain, underlined, and external references show their destination
   a {
     color: #000;

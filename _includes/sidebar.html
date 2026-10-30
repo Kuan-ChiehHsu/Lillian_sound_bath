@@ -23,4 +23,17 @@
 {% endfor %}
 </ul>
 {% endif %}
+<div class="profile-draw">
+  <div class="profile-draw-slip">
+    <p class="profile-draw-kicker">今日一籤</p>
+    <div class="profile-draw-back" hidden aria-hidden="true">
+      <span class="profile-draw-seal"></span>
+      <p class="profile-draw-repeat" hidden>今日已抽過，明天再來抽新的籤詩</p>
+    </div>
+    <div class="profile-draw-result" aria-live="polite"></div>
+    <button type="button" class="profile-draw-button">抽一張</button>
+  </div>
+</div>
+<script type="application/json" id="profile-draw-data">{{ site.data.draws | jsonify }}</script>
+<script src="{{ '/assets/js/draw.js' | relative_url }}"></script>
 </div>
